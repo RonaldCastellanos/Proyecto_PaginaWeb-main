@@ -9,6 +9,7 @@
 <body>
 <header>
     <nav>
+        <a href="dashboard.php">Inicio</a>
         <a href="users.php">Usuarios</a>
         <a href="inventario.php">Inventario</a>
         <a href="clientes.php">Clientes</a>
