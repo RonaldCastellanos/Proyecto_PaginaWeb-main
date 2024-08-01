@@ -14,7 +14,7 @@
         <a href="inventario.php">Inventario</a>
         <a href="clientes.php">Clientes</a>
         <a href="facturas.php">Facturas</a>
-        <a href="detalle_facturas.php">Detalle de Facturas</a>
+        <a href="detalle_facturas.php">Reportes</a>
         <a href="logout.php">Cerrar Sesión</a>
     </nav>
 </header>

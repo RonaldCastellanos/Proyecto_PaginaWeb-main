@@ -18,20 +18,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login-form">
-        <h2>Login</h2>
-        <form method="post" action="login.php">
-            <input type="text" name="username" placeholder="Usuario" required>
-            <input type="password" name="password" placeholder="Contraseña" required>
-            <button type="submit">Iniciar Sesión</button>
+    <div class="background">
+        <img src="background.jpg" alt="Background Image" class="background-img">
+    </div>
+    <div class="login-container">
+        <form class="login-form" action="login.php" method="POST">
+            <h2>Login</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <!-- Mensaje de error -->
+            <?php if(isset($error)) { echo "<p>$error</p>"; } ?>
+            <!-- Enlace para olvidar contraseña -->
+            <a href="#">Forgot Password?</a>
         </form>
-        <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
     </div>
 </body>
 </html>
+
