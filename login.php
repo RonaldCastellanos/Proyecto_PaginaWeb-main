@@ -26,9 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="background">
-        <img src="background.jpg" alt="Background Image" class="background-img">
-    </div>
+  
     <div class="login-container">
         <form class="login-form" action="login.php" method="POST">
             <h2>Login</h2>
