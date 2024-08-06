@@ -1,13 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     overflow: hidden;
     position: relative;
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/02/league-of-legends-aatrox-red-desktop-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .background {
@@ -40,20 +50,36 @@ body {
 }
 
 .login-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 40px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
     box-sizing: border-box;
 }
 
 .login-form h2 {
-    margin: 0 0 20px;
-    text-align: center;
-    color: #333;
-    font-size: 24px;
+    color: #fcfbfb;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.login-form label {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form label .fa-solid {
+    font-size: 20px;
+    color: #f8f8f8;
+    margin-right: 10px;
 }
 
 .login-form input[type="text"],
@@ -65,6 +91,15 @@ body {
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s ease;
+    background: transparent;
+    color: #f8f8f8;
+    border-bottom: solid 1px #cb232c;
+    outline: none;
+}
+
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+    color: rgba(248, 248, 248, 0.5);
 }
 
 .login-form input[type="text"]:focus,
@@ -75,7 +110,7 @@ body {
 
 .login-form button[type="submit"] {
     width: 100%;
-    background-color: #0072ff;
+    background: linear-gradient(to right, #cb232c, #ce1d61);
     color: #ffffff;
     padding: 12px;
     border: none;
@@ -87,7 +122,7 @@ body {
 }
 
 .login-form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to right, #ce1d61, #cb232c);
 }
 
 .login-form p {

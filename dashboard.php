@@ -7,7 +7,19 @@ if (!isset($_SESSION['user_id'])) {
 include 'header.php';
 ?>
 <div class="content">
-    <h2>Bienvenido </h2>
-    <p>Seleccione una opción del menú para comenzar.</p>
+    <h2>Bienvenido al Sistema de Facturación del Taller Mecánico</h2>
+    <p>Este sistema le permite gestionar las facturas, clientes y servicios de su taller mecánico de manera eficiente. Seleccione una opción del menú para comenzar.</p>
 </div>
-<?php include 'footer.php'; ?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Facturación del Taller Mecánico</title>
+    <link rel="stylesheet" href="inicio.css"> 
+</head>
+<body>
+    <header>
+        <h1>Sistema de Facturación de Taller Mecánico</h1>
+    </header>
