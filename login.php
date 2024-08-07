@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <button type="submit">Login</button>
             <!-- Mensaje de error -->
             <?php if(isset($error)) { echo "<p>$error</p>"; } ?>
+            
             <!-- Enlace para olvidar contraseña -->
             <a href="#">Forgot Password?</a>
         </form>

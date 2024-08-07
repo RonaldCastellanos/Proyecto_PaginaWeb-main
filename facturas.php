@@ -56,7 +56,6 @@ $factura = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <td><?= htmlspecialchars($factura['fecha']) ?></td>
                 <td><?= htmlspecialchars($factura['total']) ?></td>
                 <td>
-                    <a href="facturas.php?edit=<?= $factura['id'] ?>">Editar</a>
                     <a href="facturas.php?delete=<?= $factura['id'] ?>" onclick="return confirm('¿Estás seguro?')">Eliminar</a>
                 </td>
             </tr>
