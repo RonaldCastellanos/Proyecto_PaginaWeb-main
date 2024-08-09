@@ -1,12 +1,12 @@
 /* Variables */
 :root {
-    --primary-color: #007BFF;
-    --secondary-color: #0056b3;
+    --primary-color: #c20808d8;
+    --secondary-color: #09416e;
     --background-color: #f4f4f4;
-    --header-background-color: #282c34;
-    --header-text-color: #61dafb;
+    --header-background-color: #353212;
+    --header-text-color: #6c81df;
     --content-background-color: #fff;
-    --table-header-background-color: #007BFF;
+    --table-header-background-color: #353212;
     --table-header-text-color: #fff;
     --table-row-even-background-color: #f2f2f2;
     --table-row-hover-background-color: #e9ecef;
@@ -16,7 +16,7 @@
     --button-hover-background-color: var(--secondary-color);
     --modal-background-color: #fff;
     --modal-border-color: #ccc;
-    --modal-close-background-color: red;
+    --modal-close-background-color: rgb(192, 13, 13);
     --modal-close-hover-background-color: darkred;
 }
 
@@ -26,6 +26,10 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    background-image: url('');
+    background-size: cover; /* Esto hace que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
 }
 
 /* Header Styles */
@@ -204,4 +208,3 @@ form button[type="submit"]:hover {
 .modal-close:hover {
     background-color: var(--modal-close-hover-background-color);
 }
-

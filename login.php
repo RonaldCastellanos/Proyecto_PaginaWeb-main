@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?php if(isset($error)) { echo "<p>$error</p>"; } ?>
             
             <!-- Enlace para olvidar contraseña -->
-            <a href="#">Forgot Password?</a>
+            <a href="#">Ovidaste tu contraseña?</a>
         </form>
     </div>
 </body>

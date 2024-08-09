@@ -6,7 +6,7 @@ include 'header.php';
 // Depuración: Imprime el contenido de $_GET
 var_dump($_GET);
 
-// Verifica si el parámetro 'id' está presente en la URL
+// Verifica si el  'id' está presente en la URL
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
 

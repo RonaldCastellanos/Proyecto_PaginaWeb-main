@@ -21,5 +21,5 @@ include 'header.php';
 </head>
 <body>
     <header>
-        <h1>Sistema de Facturación de Taller Mecánico</h1>
+        <h1>Sistema de Facturación de Taller Mecánico El Compita</h1>
     </header>
