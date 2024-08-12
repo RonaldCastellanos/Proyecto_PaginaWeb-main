@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  
+  <!-- INYECTAR CODIGO DE LOGIN.JS ; -->
     <div class="login-container">
         <form class="login-form" action="login.php" method="POST">
             <h2>Login</h2>
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?php if(isset($error)) { echo "<p>$error</p>"; } ?>
             
             <!-- Enlace para olvidar contraseña -->
-            <a href="#">Ovidaste tu contraseña?</a>
+            <a href="#"></a>
         </form>
     </div>
 </body>

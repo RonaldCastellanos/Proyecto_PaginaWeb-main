@@ -1,9 +1,10 @@
 /* Estilos para header y footer */
 header, footer {
-    background-color: #353212;
+    background-color: #F8F8F9; /* Color vibrante */
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para el contenido principal */
@@ -11,27 +12,28 @@ header, footer {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     text-align: center;
 }
 
 .content h2 {
-    color: #333;
+    color: #2196f3; /* Color de título llamativo */
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .content p {
-    color: #666;
+    color: #333;
     font-size: 1.2em;
 }
 
 /* Estilos para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://img.freepik.com/foto-gratis/accesorios-coche-espacio-copia_23-2149030401.jpg'); /* Cambia esto a la ruta correcta de tu imagen */
+    background-image: url('https://img.freepik.com/foto-gratis/accesorios-coche-espacio-copia_23-2149030401.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -41,3 +43,64 @@ body {
     color: #333;
 }
 
+/* Estilos para botones */
+button {
+    background-color: #ff4081; /* Color de botón brillante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f50057; /* Color de botón en hover */
+}
+
+/* Estilos para formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form select {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+    border-color: #ff4081; /* Color de enfoque de campo de entrada */
+    outline: none;
+}
+
+form button[type="submit"] {
+    background-color: #ff4081; /* Color de botón en formulario */
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #f50057; /* Color de botón en hover del formulario */
+}
